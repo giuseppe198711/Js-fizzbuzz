@@ -7,10 +7,17 @@
 // stampo i numeri da 1 a 100
 for (var i = 1; i<101; i++) {
 
-  if(i % 3 ==0){
+    // sia multiplo di 3 che multiplo di 5 stampo Fizzbuzz
+  if (i % 5 == 0 && i % 3 == 0) {
+    console.log("Fizzbuzz");
+    // multiplo di 3 stampo Fizz
+  } else if (i % 3 ==0){
     console.log("Fizz");
+    // multiplo di 5 stampo Buzz
   } else if (i % 5 == 0) {
     console.log("Buzz");
+  } else {
+    console.log(i);
   }
 
 
